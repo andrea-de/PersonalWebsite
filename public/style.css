@@ -1,0 +1,295 @@
+/* Style */
+
+@import 'https://fonts.googleapis.com/css?family=Rubik+One';
+body,
+html {
+    margin: 0;
+    padding: 0;
+    background: lightgrey;
+    font-family: 'Rubik One', sans-serif;
+    /* background: linear-gradient(to left, #e53935, #e35d5b);*/
+}
+
+/* Layout */
+
+nav {
+    width: 95%;
+    margin: 30px 20px 20px 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    box-sizing: ;
+}
+
+nav .button {
+    height: 50px;
+}
+
+.container {
+    padding-top: 2em;
+    text-align: center;
+}
+
+.container > span {
+    color: #3498db;
+    font-size: 5em;
+    text-shadow: 0 0 0 white,
+    0 3px 0 #124364,
+    0 5px 0 #124364,
+    0 7px 0 #124364,
+    0 11px 0 #124364,
+    0 14px 0 #124364,
+    2px 5px 0 #124364,
+    4px 7px 0 #124364,
+    6px 14px 0 #124364,
+    0 6px 1px rgba(0, 0, 0, .1),
+    0 0 5px rgba(0, 0, 0, .1),
+    0 1px 3px rgba(0, 0, 0, .3),
+    0 3px 5px rgba(0, 0, 0, .2),
+    0 5px 10px rgba(0, 0, 0, .25),
+    0 10px 10px rgba(0, 0, 0, .2),
+    0 20px 20px rgba(0, 0, 0, .15);
+}
+
+.container > span:active {
+    color: blue;
+    transition: all 1s;
+}
+
+.innerContainer {
+    margin: 15px 0 0 0;
+}
+
+@media (max-width: 600px) {
+    .mobileSpacing {
+        margin: 15% 0 0 0;
+    }
+}
+
+/* About */
+
+.about {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.about > div {
+    width: 50%;
+}
+
+.description {
+    width: 100%;
+    font-style: italic;
+    font-weight: 100;
+}
+
+.description .button {
+    width: 85%;
+}
+
+.links {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.links img {
+    max-height: 70px;
+}
+
+/* Projects */
+
+.container.projects .button {
+    font-size: 1.8em;
+}
+
+.projects br::after {
+    content: 'fsvvr ';
+    padding-top: 5%;
+}
+
+#projectDiv {
+    width: 500px;
+    height: 700px;
+}
+
+.imgContainer {
+    position: ;
+    border: 0;
+    margin: 0;
+    width: 100%;
+    max-height: 70%;
+    overflow: hidden;
+    margin-bottom: 10px;
+}
+
+.imgContainer img {
+    border-top: #196090 5px solid;
+    border-left: #124364 5px solid;
+}
+
+.projectInfo {
+    bottom: 0;
+}
+
+#projectName {
+    font-size: 1.3em;
+    display: block;
+    text-align: right;
+}
+
+#projectDesc {
+    font-size: .7em;
+    display: block;
+    text-align: left;
+}
+
+@media (min-width: 1150px) {
+    #projectDiv {
+        width: 900px;
+        height: 500px;
+    }
+
+}
+
+/* Resume */
+
+.resume img {
+    margin-top: 20px;
+    max-height: 60vh;
+}
+
+.resume.full div {
+    position: fixed;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+    background: black;
+    z-index: 2;
+    overflow-y: auto
+}
+
+.resume.full img {
+    position: absolute;
+    top: 5%;
+    left: 0;
+    margin: 5% 5% 5% 5%;
+    width: 90%;
+    max-height: none;
+}
+
+
+/* Button effects */
+
+.button::before,
+.button::after {
+    position: absolute;
+    content: '';
+    transition: all 0.5s;
+}
+
+.button {
+    position: relative;
+    display: inline-block;
+    padding: 20px 40px;
+    color: white;
+    vertical-align: middle;
+    text-decoration: none;
+    font-size: 30px;
+    transition: all 0.5s;
+    background-color: #3498db;
+    margin-right: 10px;
+    margin-bottom: 10px;
+}
+
+.button::before {
+    bottom: -15px;
+    height: 15px;
+    width: 100%;
+    left: 8px;
+    transform: skewX(45deg);
+    background-color: #196090;
+}
+
+.button::after {
+    right: -15px;
+    height: 100%;
+    width: 15px;
+    bottom: -8px;
+    transform: skewY(45deg);
+    background-color: #124364;
+}
+
+.button:active {
+    margin-left: 10px;
+    margin-top: 10px;
+    margin-right: 0px;
+    margin-bottom: 0px;
+}
+
+.button:active::before {
+    bottom: -5px;
+    height: 5px;
+    left: 3px;
+}
+
+.button:active::after {
+    right: -5px;
+    width: 5px;
+    bottom: -3px;
+}
+
+.button.pressed {
+    margin-left: 10px;
+    margin-top: 10px;
+    margin-right: 0px;
+    margin-bottom: 0px;
+}
+
+.button.pressed::before {
+    bottom: -5px;
+    height: 5px;
+    left: 3px;
+}
+
+.button.pressed::after {
+    right: -5px;
+    width: 5px;
+    bottom: -3px;
+}
+
+/* Game */
+
+.about p {
+    font-size: 1.2em;
+    margin-top: 20px;
+}
+
+.onTop {
+    z-index: 2;
+}
+
+.onBottom {
+    z-index: -2;
+}
+
+.gameBack {
+    position: fixed;
+    top: -20;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: -2;
+}
+
+.gameBack.white {
+    z-index: 1;
+    background: white;
+}
+
+.gameBack.black {
+    z-index: 1;
+    background: black;
+}

@@ -1,0 +1,92 @@
+<!DOCTYPE HMTL>
+<html>
+
+<head>
+    <link rel="icon" type="image/png" href="media/favicon.png" />
+    <meta name="viewport" content="user-scalable=no" />
+    <!-- Android Styling -->
+    <meta name="theme-color" content="lightgreen">
+    <!-- IOS Styling -->
+    <meta name="apple-mobile-web-app-status-bar-style" content="lightgreen">
+    <!-- CSS Reset -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.css" />
+    <!-- JQuery -->
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+    <!-- CSS Main -->
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+    <nav>
+        <div class='button pressed'>About</div>
+        <div class='button'>Resume</div>
+        <div class='button'>Projects</div>
+        <!--<div class='button'>Links</div>-->
+    </nav>
+    <!--  Home Section  -->
+    <div class='container about'>
+        <div class="mobileSpacing"></div>
+        <span>Andrea deCandia</span>
+        <div>
+            <div class='description innerContainer'>
+                <div class='button'>Hello, I am a passionate computer science and technology enthusiast with software development, business and finance experience in addition to strong quantitative, research, and writing skills seeking exciting &amp; multi-disciplinary work.</div>
+            </div>
+            <div class='links innerContainer'>
+                <div class='button github'>
+                    <img src="media/github.png">
+                </div>
+                <div class='button linkedin'>
+                    <img src="media/linkedin.png">
+                </div>
+                <div class='button mail'>
+                    <img src="media/mail.png">
+                </div>
+            </div>
+            <div class='game innerContainer'>
+                <div class='button'>1</div>
+                <div class='button'>2</div>
+                <div class='button'>3</div>
+                <div class='button'>4</div>
+            </div>
+            <div class='gameBack innerContainer'></div>
+            <p>When Buttons 1-4 are pressed, you will receive the password</p>
+        </div>
+    </div>
+    <!--  Resume Section  -->
+    <div class='container resume'>
+        <span>Resume</span><br>
+        <div class="innerContainer">
+            <img src="media/CV.jpg">
+        </div>
+    </div>
+    <!--  Projects Section  -->
+    <div class='container projects'>
+        <div class="mobileSpacing"></div>
+        <span>Projects</span>
+        <div class="innerContainer">
+            <div class='button' id='prevButton'>
+                <span>Previous</span>
+            </div>
+            <div class='button' id='nextButton'>
+                <span>Next</span>
+            </div>
+        </div>
+        <div class="innerContainer">
+            <div class='button' id='projectDiv'>
+                <div class="imgContainer">
+                    <img>
+                </div>
+                <div>
+                    <span id="projectDesc">
+                    This describes the project.</span>
+                    <span id="projectName"></span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="data.js"></script>
+    <script src="main.js"></script>
+</body>
+
+</html>
