@@ -19,12 +19,11 @@ nav {
     display: flex;
     flex-direction: row;
     justify-content: center;
-    box-sizing: ;
 }
 
 /* Destop Responsive */
 
-@media (min-width: 800px) {
+@media (min-width: 800px) and (-webkit-min-device-pixel-ratio: 1) {
     nav .button {
         font-size: 1em;
     }
@@ -36,7 +35,7 @@ nav {
         font-size: .8em;
     }
     .container > span {
-        font-size: 3em !important;
+        font-size: 4em;
     }
 
 }
@@ -124,8 +123,8 @@ nav {
 
 #projectDiv {
     width: 500px;
-    height: 700px;
     max-height: 50%;
+    margin-bottom: 40px;
 }
 
 .imgContainer {
@@ -172,7 +171,8 @@ nav {
 
 .resume img {
     margin-top: 20px;
-    max-height: 60vh;
+    max-height: 45vh;
+    margin-bottom: 40px;
 }
 
 .resume.full div {
@@ -291,10 +291,10 @@ nav {
 
 .gameBack {
     position: fixed;
-    top: -20;
-    left: 0;
-    height: 100%;
-    width: 100%;
+    top: -50px;
+    left: -50px;
+    height: 200vh;
+    width: 200vw !important;
     z-index: -2;
 }
 
