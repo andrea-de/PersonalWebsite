@@ -67,6 +67,10 @@ $('.linkedin').click(function () {
     window.open('https://www.linkedin.com/in/andrewdecandia/');
 });
 
+$('.mail').click(function () {
+    window.open('mailto:andy.decandia@gmail.com?Subject=Hello');
+});
+
 // Resume Section
 
 var resumeContainer = document.querySelector('.resume');

@@ -1,6 +1,7 @@
 /* Style */
 
 @import 'https://fonts.googleapis.com/css?family=Rubik+One';
+@import 'https://fonts.googleapis.com/css?family=Rubik';
 body,
 html {
     margin: 0;
@@ -14,15 +15,30 @@ html {
 
 nav {
     width: 95%;
-    margin: 30px 20px 20px 20px;
+    margin: 30px 20px 0 20px;
     display: flex;
     flex-direction: row;
     justify-content: center;
     box-sizing: ;
 }
 
-nav .button {
-    height: 50px;
+/* Destop Responsive */
+
+@media (min-width: 800px) {
+    nav .button {
+        font-size: 1em;
+    }
+    .description .button {
+        font-size: 1em;
+    }
+    #prevButton,
+    #nextButton {
+        font-size: .8em;
+    }
+    .container > span {
+        font-size: 3em !important;
+    }
+
 }
 
 .container {
@@ -79,9 +95,10 @@ nav .button {
 }
 
 .description {
+    font-size: 1.3em;
     width: 100%;
-    font-style: italic;
-    font-weight: 100;
+    font-family: 'Rubik', sans-serif;
+    font-weight: ;
 }
 
 .description .button {
@@ -105,14 +122,10 @@ nav .button {
     font-size: 1.8em;
 }
 
-.projects br::after {
-    content: 'fsvvr ';
-    padding-top: 5%;
-}
-
 #projectDiv {
     width: 500px;
     height: 700px;
+    max-height: 50%;
 }
 
 .imgContainer {
@@ -141,6 +154,7 @@ nav .button {
 }
 
 #projectDesc {
+    font-family: 'Rubik', sans-serif;
     font-size: .7em;
     display: block;
     text-align: left;
@@ -197,7 +211,7 @@ nav .button {
     color: white;
     vertical-align: middle;
     text-decoration: none;
-    font-size: 30px;
+    font-size: 2em;
     transition: all 0.5s;
     background-color: #3498db;
     margin-right: 10px;

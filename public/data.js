@@ -3,7 +3,7 @@ data = [
         "name": "Battleship Java Game",
         "pic": "media/demoBattleship.PNG",
         "link": "https://battlesh1p.herokuapp.com/main.html",
-        "desc": "Java Spring Boot application using the Java Persistence API (JPA) and object-relational mapping implemented with Hibernate ORM. Multi-user access with Authentication and Authorization provided by Spring Security. Persistent data storage using PostgreSQL and hosted by Heroku with database services also provided by Heroku through Amazon Web Services (AWS)."
+        "desc": "Java Spring Boot application using the Java Persistence API (JPA) and Hibernate ORM. Multi-user access with Authentication and Authorization provided by Spring Security. Persistent data storage using PostgreSQL and hosted by Heroku with database services also provided by Heroku through Amazon Web Services (AWS)."
     },
     {
         "name": "Soccer League Website",

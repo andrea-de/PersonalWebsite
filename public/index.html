@@ -5,9 +5,9 @@
     <link rel="icon" type="image/png" href="media/favicon.png" />
     <meta name="viewport" content="user-scalable=no" />
     <!-- Android Styling -->
-    <meta name="theme-color" content="lightgreen">
+    <meta name="theme-color" content="lightgrey">
     <!-- IOS Styling -->
-    <meta name="apple-mobile-web-app-status-bar-style" content="lightgreen">
+    <meta name="apple-mobile-web-app-status-bar-style" content="lightgrey">
     <!-- CSS Reset -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.css" />
     <!-- JQuery -->
@@ -84,7 +84,20 @@
             </div>
         </div>
     </div>
+    <script src="https://www.gstatic.com/firebasejs/4.10.0/firebase.js"></script>
+    <script>
+        // Initialize Firebase
+        var config = {
+            apiKey: "AIzaSyCE-Bq3t6pAqGm1daTuLNOZ9Mr6_vdhJyA",
+            authDomain: "mywebsite-dev.firebaseapp.com",
+            databaseURL: "https://mywebsite-dev.firebaseio.com",
+            projectId: "mywebsite-dev",
+            storageBucket: "",
+            messagingSenderId: "776825399644"
+        };
+        firebase.initializeApp(config);
 
+    </script>
     <script src="data.js"></script>
     <script src="main.js"></script>
 </body>
